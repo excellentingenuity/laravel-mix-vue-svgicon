@@ -50,4 +50,8 @@ class SVGIcon {
 
 mix.extend('svgicon', new SVGIcon());
 
+Vue.component('svgicon', IconComponent);
+
+export const IconComponent = icon;
+
 module.exports.svgicon = SVGIcon;
