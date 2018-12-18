@@ -1,6 +1,6 @@
 <template>  
     <span>
-        <div v-html="require(`svgpath/${icon}.svg`)"></div>
+        <div v-html="require(`SVGPATH/${icon}.svg`)"></div>
     </span>
    
 </template> 
@@ -9,7 +9,9 @@
 export default {
     name: 'IconComponent',
     data() {
-        return {}
+        return {
+            
+        }
     },
     props: {
         'icon': {

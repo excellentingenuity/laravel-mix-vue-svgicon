@@ -20,14 +20,16 @@ class SVGIcon {
         };
     }
 
-    webpackConfig(webpackConfig) {
-        webpackConfig.resolve.alias.svgpath = path.resolve(__dirname, this.configPath);
-        // TODO: add support for additional paths
-        //webpackConfig.resolve.alias.Zondicons = path.resolve(__dirname, '../svg/zondicons');
-    }
-
     register(configPath = './public/resources/svg') {
         this.configPath = configPath;
+        let absPath = process.cwd() + '/' + this.configPath;
+        mix.webpackConfig({
+            resolve: {
+                alias: {
+                    'SVGPATH': path.resolve(__dirname, absPath)
+                }
+            }
+        })
     }
 
     boot() {
