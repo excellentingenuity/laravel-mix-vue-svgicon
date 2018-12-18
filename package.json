@@ -1,20 +1,30 @@
 {
-  "name": "yes",
+  "name": "laravel-mix-vue-svgicon",
   "version": "1.0.0",
   "description": "Laravel Mix extension that provides loading svgs as a vue component named icon, compatible with Adam Wathan's Blade extension.",
   "main": "index.js",
+  "repository": {
+    "url": "https://github.com/excellentingenuity/laravel-mix-vue-svgicon"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
     "laravel",
-    "mix",
+    "laravel-mix",
     "svg",
     "vue"
   ],
   "author": "Excellent InGenuity LLC - James Johnson",
   "license": "MIT",
   "devDependencies": {
-    "laravel-mix": "^4.0.7"
+    "eslint": "^5.10.0",
+    "imagemin": "^6.0.0"
+  },
+  "peerDependencies": {
+    "laravel-mix": "^4.0.9"
+  },
+  "dependencies": {
+    "html-loader": "^0.5.5"
   }
 }
