@@ -1,18 +1,14 @@
 # laravel-mix-vue-svgicon
 
-Laravel Mix extension that provides loading svgs as a vue component named icon, compatible with Adam Wathan's Blade extension.
+Laravel Mix extension that provides loading svgs as a vue component named icon, compatible with Adam Wathan's Blade extension. This package is inspired by the post by Caleb Porzio - [Using inline SVGs in Vue components.](http://calebporzio.com/using-inline-svgs-in-vue-compoments/)
 
 ## Installation
 `npm install laravel-mix-vue-svgicon`
 
 ## Setup
-In your `webpack.mix.js` file add 
+In your `webpack.mix.js` to the top of the file, add: `require('laravel-mix-vue-svgicon');` . 
 
-`require('laravel-mix-vue-svgicon');` 
-
-to the top of the file. Then in your `mix` method chain add 
-
-`svgicon('your path here')`.
+Then in your `mix` method chain add: `svgicon('your path here')`.
 
 If you do not provide a path to the method, the default path is `./../public/resources/svg` to provide compatability with Adam Wathan's Blade SVG package.
 
