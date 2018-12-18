@@ -51,4 +51,3 @@ class SVGIcon {
 mix.extend('svgicon', new SVGIcon());
 
 module.exports.svgicon = SVGIcon;
-module.exports.svgicon.IconComponent = IconComponent;

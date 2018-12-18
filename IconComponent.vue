@@ -8,6 +8,9 @@
 
 export default {
     name: 'IconComponent',
+    data() {
+        return {}
+    },
     props: {
         'icon': {
             type: String
