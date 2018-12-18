@@ -20,7 +20,7 @@ class SVGIcon {
         };
     }
 
-    register(configPath = './public/resources/svg') {
+    register(configPath = './../public/resources/svg') {
         this.configPath = configPath;
         let absPath = process.cwd() + '/' + this.configPath;
         mix.webpackConfig({
