@@ -8,11 +8,11 @@ Laravel Mix extension that provides loading svgs as a vue component named icon, 
 ## Setup
 In your `webpack.mix.js` to the top of the file, add: `require('laravel-mix-vue-svgicon');` . 
 
-Then in your `mix` method chain add: `svgicon('your path here')`.
+Then in your `mix` method chain add: `.svgicon('your path here')`.
 
 If you do not provide a path to the method, the default path is `./../public/resources/svg` to provide compatability with Adam Wathan's Blade SVG package.
 
-**Note the path that `svgicon` takes is relative to the root directory where your webpack.mix.js file resides. If your path is incorrect then the extension will not work and webpack will throw an error that it cannot load the module `SVGPATH`.**
+**Note the path that** `.svgicon()` **takes is relative to the root directory where your webpack.mix.js file resides. If your path is incorrect then the extension will not work and webpack will throw an error that it cannot load the module `SVGPATH`.**
 
 ## Usage
 
