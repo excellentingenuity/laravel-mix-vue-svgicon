@@ -18,7 +18,7 @@ If you do not provide a path to the method, the default path is `./../public/res
 
 ### Default
 
-Once you have the package installed and the mix extension active you may use the icon component like anyother vue.js component. The sole property that the component takes is the name of the file under the svg directory you provided to the mix method. E.g., file is `resources/svg/close.svg`, `webpack.mix.js` includes `mix.svgicon(resources\svg)` and the consuming vue component looks like this:
+Once you have the package installed and the mix extension active you may use the icon component like anyother vue.js component. The sole property that the component takes is the name of the file under the svg directory you provided to the mix method. E.g., file is `resources/svg/close.svg`, `webpack.mix.js` includes `mix.svgicon(resources/svg)` and the consuming vue component looks like this:
 
 ```javascript
 <template>
