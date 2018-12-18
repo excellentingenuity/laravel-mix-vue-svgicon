@@ -1,5 +1,4 @@
 let mix = require('laravel-mix');
-let icon = require('./IconComponent.vue');
 
 class SVGIcon {
     
@@ -8,7 +7,7 @@ class SVGIcon {
     }
     
     dependencies() {
-        return ['vue-svg-loader'];
+        
     }
 
     webpackRules() {
