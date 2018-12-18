@@ -21,7 +21,7 @@ class SVGIcon {
     }
 
     webpackConfig(webpackConfig) {
-        webpackConfig.resolve.alias.SVG = path.resolve(__dirname, this.configPath);
+        webpackConfig.resolve.alias.svgpath = path.resolve(__dirname, this.configPath);
         // TODO: add support for additional paths
         //webpackConfig.resolve.alias.Zondicons = path.resolve(__dirname, '../svg/zondicons');
     }
@@ -48,3 +48,5 @@ class SVGIcon {
 }
 
 mix.extend('svgicon', new SVGIcon());
+
+module.exports = SVGIcon;

@@ -1,6 +1,6 @@
 <template>  
     <span>
-        <div v-html="require(`SVG/${icon}.svg`)"></div>
+        <div v-html="require(`svgpath/${icon}.svg`)"></div>
     </span>
    
 </template> 
