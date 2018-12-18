@@ -1,4 +1,5 @@
 let mix = require('laravel-mix');
+let icon = require('./IconComponent.vue');
 
 class SVGIcon {
     
@@ -48,3 +49,6 @@ class SVGIcon {
 }
 
 mix.extend('svgicon', new SVGIcon());
+
+module.exports.svgicon = SVGIcon;
+module.exports.svgicon.IconComponent = IconComponent;
