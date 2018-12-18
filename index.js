@@ -49,7 +49,3 @@ class SVGIcon {
 }
 
 mix.extend('svgicon', new SVGIcon());
-
-Vue.component('svgicon', IconComponent);
-
-module.exports.svgicon = SVGIcon;
