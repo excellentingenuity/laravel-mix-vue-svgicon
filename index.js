@@ -36,7 +36,7 @@ class SVGIcon {
         //console.log('loading svgicon');
         Mix.listen('configReady', function (config) {  
             const rules = config.module.rules;
-            const targetRegex = /(\.(png|jpe?g|gif)$|^((?!font).)*\.svg$)/;
+            const targetRegex = /(\.(png|jpe?g|gif|webp)$|^((?!font).)*\.svg$)/;
             
             for (let rule of rules) {
                 if (rule.test.toString() == targetRegex.toString()) {
