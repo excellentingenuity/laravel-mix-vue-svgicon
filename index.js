@@ -27,7 +27,7 @@ class SVGIcon {
         mix.webpackConfig({
             resolve: {
                 alias: {
-                    'SVGPATH': path.resolve(__dirname, absPath)
+                    'SVGPATH': path.resolve(absPath)
                 }
             }
         })
