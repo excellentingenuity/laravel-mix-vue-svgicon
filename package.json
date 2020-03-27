@@ -25,6 +25,7 @@
     "laravel-mix": "^5.0.0"
   },
   "dependencies": {
+    "svg-inline-loader": "^0.8.2",
     "html-loader": "^1.0.0",
     "laravel-mix": "^5.0.4",
     "vue-loader": "^15.9.1"
