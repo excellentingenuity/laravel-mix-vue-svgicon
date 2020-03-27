@@ -1,4 +1,5 @@
 const mix = require('laravel-mix');
+const path = require('path');
 
 class SVGIcon {
     
@@ -22,7 +23,7 @@ class SVGIcon {
 
     register(configPath = './../public/resources/svg') {
         this.configPath = configPath;
-        let absPath = process.cwd() + this.configPath;
+        let absPath = path.normalize(this.configPath);
         mix.webpackConfig({
             resolve: {
                 alias: {
