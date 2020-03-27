@@ -14,10 +14,7 @@ class SVGIcon {
     webpackRules() {
         return {
             test: /\.svg$/,
-            loader: 'html-loader',
-            options: {
-                minimize: true
-            }
+            loader: 'svg-inline-loader'
         };
     }
 
