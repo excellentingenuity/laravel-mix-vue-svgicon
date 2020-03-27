@@ -22,7 +22,7 @@ class SVGIcon {
 
     register(configPath = './../public/resources/svg') {
         this.configPath = configPath;
-        let absPath = process.cwd() + '/' + this.configPath;
+        let absPath = process.cwd() + this.configPath;
         mix.webpackConfig({
             resolve: {
                 alias: {
