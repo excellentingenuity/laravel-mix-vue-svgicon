@@ -20,11 +20,11 @@ class SVGIcon {
 
     register(configPath = './../public/resources/svg') {
         this.configPath = configPath;
-        let absPath = path.normalize(this.configPath);
+        let absPath = process.cwd() + '/' + this.configPath;
         mix.webpackConfig({
             resolve: {
                 alias: {
-                    'SVGPATH': path.resolve(absPath)
+                    'SVGPATH': path.resolve(__dirname, absPath)
                 }
             }
         })
