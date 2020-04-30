@@ -27,7 +27,10 @@
   "dependencies": {
     "html-loader": "^1.1.0",
     "laravel-mix": "^5.0.4",
-    "svg-inline-loader": "^0.8.2",
-    "vue-loader": "^15.9.1"
+    "imagemin": "^6.1.0",
+    "imagemin-svgo": "^7.0.0",
+    "img-loader": "^3.0.1",
+    "raw-loader": "^4.0.0",
+    "svg-vue": "^0.1.1"
   }
 }
